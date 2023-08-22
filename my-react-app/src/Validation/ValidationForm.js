@@ -1,4 +1,4 @@
-import { Alert } from "bootstrap";
+import Alert from "../Components/Alert";
 import React, { useRef, useState } from "react";
 
 const ValidationForm = () => {
@@ -26,7 +26,7 @@ const ValidationForm = () => {
 
   return (
     <React.Fragment>
-      {showEmailValidAlert && <Alert text="Email is Valid."/> }
+      {showEmailValidAlert && <Alert text="Email is Valid." />}
 
       <form className="form" onSubmit={submitHandler}>
         <div className="row g-3">

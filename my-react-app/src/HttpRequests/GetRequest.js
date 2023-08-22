@@ -13,7 +13,7 @@ const GetRequest = () => {
       .then((data) => {
         setPeople(
           data.results.map((person) => {
-            return { id: Math.random(), name: person.name };
+            return { key: Math.random(), name: person.name };
           })
         );
       });
@@ -27,7 +27,7 @@ const GetRequest = () => {
         </button>
       </div>
       <br />
-      {persons.length > 0 &&  (
+      {persons.length > 0 && (
         <div className="card" style={{ width: "18rem" }}>
           <ul className="list-group list-group-flush">
             {persons.map((person) => {
